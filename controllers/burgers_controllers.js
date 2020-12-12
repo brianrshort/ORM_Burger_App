@@ -40,3 +40,19 @@ router.put("/:id", function(req, res) {
     }
   });
 });
+
+
+//Delete/destroy a row of information in the burger table in the database
+router.delete("/api/burgers/:id", function(req, res) {
+  var condition = "id = " + req.params.id;
+
+  burgers.delete(condition, function(result) {
+    if (result.affectedRows == 0) {
+      return res.status(404).end();
+    } else {
+      res.status(200).end();
+    }
+  });
+});
+
+
