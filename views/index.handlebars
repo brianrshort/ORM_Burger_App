@@ -60,3 +60,35 @@
   </div>
 </div>
 
+
+<!--Beginning of javascript-->
+<script>
+
+
+  //Button to devour a specific burger
+	$(".devburger").on("click", function(event) {
+    event.preventDefault();
+  	//console.log("clicked")
+
+    var id = $(this).val();	
+    console.log(id);
+
+    var nowDevoured = {
+      devoured: true
+    };
+	  //console.log(nowDevoured.devoured)
+
+    // Send the PUT request.
+    $.ajax("/" + id, {
+      type: "PUT",
+      data: nowDevoured
+    }).then(
+      function() {
+        console.log("updated id ", id);
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  });
+
+  
