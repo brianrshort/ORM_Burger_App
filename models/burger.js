@@ -17,3 +17,11 @@ create: function(cols, vals, cb) {
     cb(res);
   });
 },
+
+
+//Update an individual row in the burgers table
+update: function(objColVals, condition, cb) {
+  orm.update("burgers", objColVals, condition, function(res) {
+    cb(res);
+  });
+},
