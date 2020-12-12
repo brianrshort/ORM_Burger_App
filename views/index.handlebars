@@ -38,4 +38,25 @@
     </form>
   </div>
 
-  
+  <!--The right column where the devoured burgers are displayed-->
+
+  <div class="col-4">
+      {{#each burgers}}
+        {{#if devoured}}
+          <div class="card p-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{this.burger}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Burger Database ID: {{this.id}}</h6>
+              <p>You ate this one!!!</p>
+              <button name="burger" data-burgerid="{{this.id}}" value="{{this.id}}" class="createburger" type="submit">Recreate this one!</button>
+            </div>
+          </div>
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+
+
+  </div>
+</div>
+
