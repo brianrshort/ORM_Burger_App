@@ -34,3 +34,6 @@ delete: function(condition, cb) {
   });
 }
 };
+
+
+module.exports = burger;
