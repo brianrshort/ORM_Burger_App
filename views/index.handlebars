@@ -91,4 +91,29 @@
     );
   });
 
-  
+  //Button to recreate a burger once it's been devoured
+  $(".createburger").on("click", function(event) {
+    event.preventDefault();
+	  //console.log("clicked")
+
+    var id = $(this).val();	
+  	//console.log(id);
+
+    var nowDevoured = {
+      devoured: false
+    };
+	  //console.log(nowDevoured.devoured)
+
+    $.ajax("/" + id, {
+      type: "PUT",
+      data: nowDevoured
+    }).then(
+      function() {
+        console.log("updated id ", id);
+        location.reload();
+      }
+    );
+  });
+
+</script>
+
