@@ -1,7 +1,7 @@
 
 <!--Jumbotron at the top of the page-->
 
-<div class="jumbotron text-center">
+<div class="jumbotron text-center lightgreen">
   <h1 class="display-4">Burger City</h1>
   <p class="lead">America's finest purveyor of digital burgerization</p>
   <hr class="my-4">
@@ -16,12 +16,12 @@
     <div class="col-4">
         {{#each burgers}}
           {{#unless devoured}}
-          <div class="card p-3" style="width: 18rem;">
+          <div class="card p-3 grayblue m-3" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">{{this.burger}}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Burger Database ID: {{this.id}}</h6>
+              <h6 class="card-subtitle mb-2">Burger Database ID: {{this.id}}</h6>
               <p>This looks delicious!!!</p>
-              <button name="burger" data-burgerid="{{this.id}}" value="{{this.id}}" class="devburger" type="submit">Devour the burger!</button>
+              <button name="burger" data-burgerid="{{this.id}}" value="{{this.id}}" class="devburger btn btn-danger" type="submit">Devour the burger!</button>
             </div>
           </div>
           {{/unless}}
@@ -31,10 +31,10 @@
   <!--Form to create a new burger-->
 
   <div class="col-3 p-3">
-    <h5>Name and create a new burger!</h2>
+    <h5 style="color: white;">Name and create a new burger!</h2>
     <form action="/" method="POST">
       <textarea type="text" name="burger"></textarea>
-      <button type="submit">Submit</button>
+      <button type="submit" class="btn btn-info">Submit</button>
     </form>
   </div>
 
@@ -43,12 +43,12 @@
   <div class="col-4">
       {{#each burgers}}
         {{#if devoured}}
-          <div class="card p-3" style="width: 18rem;">
+          <div class="card p-3 m-3 orange" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">{{this.burger}}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Burger Database ID: {{this.id}}</h6>
+              <h6 class="card-subtitle mb-2">Burger Database ID: {{this.id}}</h6>
               <p>You ate this one!!!</p>
-              <button name="burger" data-burgerid="{{this.id}}" value="{{this.id}}" class="createburger" type="submit">Recreate this one!</button>
+              <button name="burger" data-burgerid="{{this.id}}" value="{{this.id}}" class="createburger btn btn-success" type="submit">Recreate this one!</button>
             </div>
           </div>
         {{/if}}
