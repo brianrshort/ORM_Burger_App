@@ -27,3 +27,18 @@ function objToSql(ob) {
   return arr.toString();
 }
 
+// The Object Relational Mapper 
+var orm = {
+
+  //Read all/select all from a specific table
+  all: function(tableInput, cb) {
+    var queryString = "SELECT * FROM " + tableInput + ";";
+    connection.query(queryString, function(err, result) {
+      if (err) {
+        throw err;
+      }
+      cb(result);
+    });
+  },
+
+  
