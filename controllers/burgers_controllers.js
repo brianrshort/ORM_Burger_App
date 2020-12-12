@@ -15,3 +15,14 @@ router.get("/", function(req, res) {
   });
 });
 
+//Post function to create a new row in the burger table in the database
+router.post("/", function(req, res) {
+  burger.create([
+    "burger"
+  ], [
+    req.body.burger
+  ], function(result) {
+    res.redirect("/");
+  });
+});
+
