@@ -4,7 +4,7 @@ Eat-Da-Burger/Burger City is an app that allows users to input the names of new 
 
 As with a number of other projects completed as part of the Michigan State University Web Dev Coding Bootcamp program, colors reflect MSU brand colors. Learn more about the brand colors here -- https://brand.msu.edu/design-visual/index.html
 
-![Screengrab from Eat-Da-Burger](https://github.com/brianrshort/ORM_Burger_App/blob/master/assets/burger.jpg)
+![Screengrab from Eat-Da-Burger](https://github.com/brianrshort/ORM_Burger_App/assets/burger.jpg)
 
 
 #Demo
