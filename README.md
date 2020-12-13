@@ -8,11 +8,11 @@ As with a number of other projects completed as part of the Michigan State Unive
 
 
 
-#Demo
+# Demo
 
 The site is hosted on Heroku, [check it out!](https://pure-island-44720.herokuapp.com)
 
-#Installation and Usage
+# Installation and Usage
 
 To use the app locally, use http://localhost:8080 after doing the following steps in order:
 
@@ -22,6 +22,6 @@ To use the app locally, use http://localhost:8080 after doing the following step
     run the server with server.js
     load localhost:8080 in your browser to run the app
 
-#Technologies Used
+# Technologies Used
 
 HTML, CSS, Javascript, MySQL, Node.js, Express, Handlebars
