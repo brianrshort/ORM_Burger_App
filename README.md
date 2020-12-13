@@ -16,11 +16,11 @@ The site is hosted on Heroku, [check it out!](https://pure-island-44720.herokuap
 
 To use the app locally, use http://localhost:8080 after doing the following steps in order:
 
-    DL/clone this repo
-    Go to the main directory
-    npm install to access the package.json dependencies
-    run the server with server.js
-    load localhost:8080 in your browser to run the app
+* DL/clone this repo
+* Go to the main directory
+* npm install to access the package.json dependencies
+* run the server with server.js
+* load localhost:8080 in your browser to run the app
 
 # Technologies Used
 
